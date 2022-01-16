@@ -1,53 +1,86 @@
 *,
 ::after,
 ::before {
-  box-sizing: border-box;
-  line-height: 1.5;
+    box-sizing: border-box;
+    line-height: 1.5;
 }
 
 body {
-  margin: 0;
-  color: #212529;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: transparent;
-  font-size: x-large;
+    margin: 0;
+    color: #FFFFFF;
+    font-family: Roboto, sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    font-size: x-large;
+}
+
+a, a:visited {
+    color: #FFFFFF;
 }
 
 .container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-  height: 100vh;
-  width: 100%;
+    height: 100vh;
+    width: 100%;
 
-  background: url('/images/background.jpg') center center / cover no-repeat;
+    background: url('/images/background.jpg') center center / cover no-repeat;
 }
 
 .container__content {
-  left: 0px;
-  position: absolute;
-  top: 0px;
+    width: 100%;
 
-  height: 100%;
-  width: 100%;
+    background: #212529f2;
 
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-  padding-bottom: 100px;
+    padding: 4rem;
 }
 
 .whatsapp-ico {
-  width: 75px;
-  height: 75px;
-  margin-bottom: 10px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.message {
+    font-size: 1.5rem;
+}
+
+.message__actions {
+    margin: 2rem 0;
 }
 
 .message-link {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media__instagram {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.social-media__instagram .icon {
+    fill: #B6111D;
+    width: 30px;
+    height: 30px;
+    vertical-align: sub;
+    margin-right: 10px;
+}
+
+.social-media__instagram .link {
+    padding: 1rem;
+}
+
+.footer {
+    text-align: center;
+    font-size: 1rem;
 }
